@@ -1,0 +1,85 @@
+/*
+    EJERCIO COMPLETO
+    1 - Crear documento HTML y vincularlo con CSS
+    2 - Crear una estructura HTML que cuente con un CONTENEDOR GENERAL
+        CABECERA, BARRA LATERAL (SIDEBAR), SECCION DE CONTENIDO PRINCIPAL,
+        ELEMENTOS DENTRO DEL CONTENERO PRINCIPAL Y FOOTER
+    3.Todo el conenido debe estar dentro del contenedor general
+        y su ancho será de 1200px y estar centrado
+    4. Header debe ocupar el 100% del ancho y tener texto grande 
+        centrado
+    5. Menu debe tener lo elementos uno al lado del otro.
+    6. El contenido principal debe tener un ancho del 70%.
+    7. El contenido dentro del contenedor principal debe ser
+      una cuadricula con 4 lineas de 2 cajas
+    8. La barra lateral debe tener un ancho del 30%.
+    9. El footer debe tener un ancho del 100% del div que lo contiene
+        y estar abajo del todo.
+*/
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-image: url('../03-fondos/img/patron1.jpg');
+}
+#contain{
+    width: 1200px;
+    background-color: #ccc;
+    margin: 0px auto;
+}
+header{
+    font-size: 25px;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-color: lightcoral;
+    text-align: center;
+}
+header ul li{
+    list-style: none;
+    display: inline;
+    
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+
+#principal{
+    width: 70%;
+    background-color: lightcyan;
+    max-width: 1200px;
+    
+}
+
+#principal div{
+    display: block;
+    float: left;
+    background-color: black;
+    width: 376px;
+    height: 284px;
+    margin: 10px;
+    border: 2px solid yellowgreen;
+}
+
+
+#barralateral{
+    display: block;
+    width: 30%;
+    height: 1232px;
+    background-color: tomato;
+    float: right;
+}
+
+.clearfix{
+    float: none;
+    /*Me limpia los flotados tanto el de la izq como el 
+    de la derecha*/
+    clear: both;
+}
+footer{
+    width: 100%;
+    height: 120px;
+    background-color: yellowgreen;
+}
